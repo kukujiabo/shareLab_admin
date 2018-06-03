@@ -8,6 +8,8 @@ public/uploads
 
 gitc
 
+vendor
+
 .idea/
 .env
 
