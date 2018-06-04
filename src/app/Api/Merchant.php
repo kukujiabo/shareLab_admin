@@ -29,9 +29,9 @@ class Merchant extends BaseApi {
 
         'mcode' => 'mcode|string|false||商户号',
         'mname' => 'mname|string|false||商家名称',
-        'status' => 'status|int|false|1|商户状态'
-        'page' => 'page|int|false|1|页码'
-        'page_size' => 'page_size|int|false|20|每页条数'
+        'status' => 'status|int|false|1|商户状态',
+        'page' => 'page|int|false|1|页码',
+        'page_size' => 'page_size|int|false|20|每页条数',
         'order' => 'order|string|false||排序'
 
       ]
