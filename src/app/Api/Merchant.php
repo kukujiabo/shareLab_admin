@@ -24,6 +24,17 @@ class Merchant extends BaseApi {
         'status' => 'status|int|false|1|商户状态'
       
       ],
+
+      'listQuery' => [
+
+        'mcode' => 'mcode|string|false||商户号',
+        'mname' => 'mname|string|false||商家名称',
+        'status' => 'status|int|false|1|商户状态'
+        'page' => 'page|int|false|1|页码'
+        'page_size' => 'page_size|int|false|20|每页条数'
+        'order' => 'order|string|false||排序'
+
+      ]
     
     ]);
   
@@ -38,6 +49,18 @@ class Merchant extends BaseApi {
   public function create() {
   
     return $this->dm->create($this->retriveRuleParams(__FUNCTION__));
+  
+  }
+
+  /**
+   * 商户列表
+   * @desc 商户列表
+   *
+   * @return array list
+   */
+  public function listQuery() {
+  
+    return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
   
   }
 

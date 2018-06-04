@@ -9,4 +9,10 @@ class MerchantDm {
   
   }
 
+  public function listQuery($data) {
+  
+    return \App\request('App.Merchant.ListQuery', $data);
+  
+  }
+
 }
