@@ -34,6 +34,16 @@ class Merchant extends BaseApi {
         'page_size' => 'page_size|int|false|20|每页条数',
         'order' => 'order|string|false||排序'
 
+      ],
+
+      'getAll' => [
+
+        'mcode' => 'mcode|string|false||商户号',
+        'mname' => 'mname|string|false||商家名称',
+        'order' => 'order|string|false||排序',
+        'fields' => 'fields|string|false||返回字段',
+        'status' => 'status|int|false|1|商户状态'
+
       ]
     
     ]);
@@ -64,5 +74,16 @@ class Merchant extends BaseApi {
   
   }
 
+  /**
+   * 获取全部商户
+   * @desc 获取全部商户
+   *
+   * @return array list
+   */
+  public function getAll() {
+  
+    return $this->dm->getAll($this->retriveRuleParams(__FUNCTION__));
+  
+  }
 
 }

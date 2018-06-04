@@ -15,4 +15,10 @@ class MerchantDm {
   
   }
 
+  public function getAll($data) {
+  
+    return \App\request('App.Merchant.GetAll', $data);
+
+  }
+
 }
