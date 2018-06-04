@@ -25,7 +25,7 @@ class Merchant extends BaseApi {
       
       ],
     
-    ])
+    ]);
   
   }
 
