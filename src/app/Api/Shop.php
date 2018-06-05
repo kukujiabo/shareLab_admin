@@ -25,6 +25,19 @@ class Shop extends BaseApi {
         'longtitude' => 'longtitude|string|false||经度',
         'status' => 'status|int|false|1|店铺状态：1.有效，2.停用'
       
+      ],
+
+      'listQuery' => [
+      
+        'mid' => 'mid|int|false||商户id',
+        'shop_name' => 'shop_name|string|false||店铺名称',
+        'shop_code' => 'shop_code|string|false||店铺编码',
+        'status' => 'status|int|false||店铺状态',
+        'fields' => 'fields|string|false||店铺字段',
+        'order' => 'order|string|false||列表排序',
+        'page' => 'page||||',
+        'page_size' => 'page_size||||'
+      
       ]
     
     ]);
@@ -40,6 +53,18 @@ class Shop extends BaseApi {
   public function create() {
   
     return $this->dm->create($this->retriveRuleParams(__FUNCTION__)); 
+  
+  }
+
+  /**
+   * 列表查询
+   * @desc 列表查询
+   *
+   * @return array list
+   */
+  public function listQuery() {
+  
+    return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
   
   }
 
