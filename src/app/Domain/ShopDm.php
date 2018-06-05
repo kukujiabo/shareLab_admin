@@ -21,5 +21,14 @@ class ShopDm {
   
   }
 
+  /**
+   * 查询详情
+   */
+  public function getDetail($data) {
+  
+    return \App\request('App.Shop.GetDetail', $data);
+  
+  }
+
 
 }

@@ -39,6 +39,12 @@ class Shop extends BaseApi {
         'page' => 'page||||',
         'page_size' => 'page_size||||'
       
+      ],
+
+      'getDetail' => [
+      
+        'id' => 'id|int|true||商品id'
+      
       ]
     
     ]);
@@ -66,6 +72,18 @@ class Shop extends BaseApi {
   public function listQuery() {
   
     return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
+  
+  }
+
+  /**
+   * 查询门店详情
+   * @desc 查询门店详情
+   *
+   * @return array data
+   */
+  public function getDetail() {
+  
+    return $this->dm->getDetail($this->retriveRuleParams(__FUNCTION__)); 
   
   }
 
