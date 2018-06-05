@@ -112,7 +112,7 @@ class Shop extends BaseApi {
   
     $params = $this->retriveRuleParams(__FUNCTION__);
 
-    return $this->dm->updateShop($params['id'], $params);
+    return $this->dm->updateShop($params);
   
   }
 
