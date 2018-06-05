@@ -28,6 +28,21 @@ class Shop extends BaseApi {
       
       ],
 
+      'updateShop' => [
+      
+        'id' => 'id|int|true||门店id',
+        'mid' => 'mid|int|false||商户id',
+        'shop_name' => 'shop_name|string|false||店铺名称',
+        'shop_code' => 'shop_code|string|false||店铺编码',
+        'thumbnail' => 'thumbnail|string|false||店铺logo',
+        'brief' => 'brief|string|false||店铺简介',
+        'image_text' => 'image_text|string|false||店铺照片',
+        'carousel' => 'carousel|string|false||店铺轮播图',
+        'shop_address' => 'shop_address|string|false||门店地址',
+        'status' => 'status|int|false|1|店铺状态：1.有效，2.停用'
+      
+      ],
+
       'listQuery' => [
       
         'mid' => 'mid|int|false||商户id',
@@ -84,6 +99,20 @@ class Shop extends BaseApi {
   public function getDetail() {
   
     return $this->dm->getDetail($this->retriveRuleParams(__FUNCTION__)); 
+  
+  }
+
+  /**
+   * 更新门店详情
+   * @desc 更新门店详情
+   *
+   * @return boolean true/false
+   */
+  public function updateShop() {
+  
+    $params = $this->retriveRuleParams(__FUNCTION__);
+
+    return $this->dm->updateShop($params['id'], $params);
   
   }
 

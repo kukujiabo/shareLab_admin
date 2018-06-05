@@ -30,5 +30,13 @@ class ShopDm {
   
   }
 
+  /**
+   * 更新店铺信息
+   */
+  public function updateShop($data) {
+  
+    return \App\request('App.Shop.UpdateShop', $data);
+  
+  }
 
 }
