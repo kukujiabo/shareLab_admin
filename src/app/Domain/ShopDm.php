@@ -39,4 +39,13 @@ class ShopDm {
   
   }
 
+  /**
+   * 查询全部列表
+   */
+  public function getAll($data) {
+  
+    return \App\request('App.Shop.GetAll', $data);
+  
+  }
+
 }

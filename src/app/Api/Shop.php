@@ -56,6 +56,18 @@ class Shop extends BaseApi {
       
       ],
 
+
+      'getAll' => [
+      
+        'mid' => 'mid|int|false||商户id',
+        'shop_name' => 'shop_name|string|false||店铺名称',
+        'shop_code' => 'shop_code|string|false||店铺编码',
+        'status' => 'status|int|false||店铺状态',
+        'fields' => 'fields|string|false||店铺字段',
+        'order' => 'order|string|false||列表排序'
+      
+      ],
+
       'getDetail' => [
       
         'id' => 'id|int|true||商品id'
@@ -113,6 +125,20 @@ class Shop extends BaseApi {
     $params = $this->retriveRuleParams(__FUNCTION__);
 
     return $this->dm->updateShop($params);
+  
+  }
+
+  /**
+   * 查询所有门店
+   * @desc 查询所有门店
+   *
+   * @return array list
+   */
+  public function getAll() {
+  
+    $params = $this->retriveRuleParams(__FUNCTION__); 
+
+    return $this->dm->getAll($params);
   
   }
 
