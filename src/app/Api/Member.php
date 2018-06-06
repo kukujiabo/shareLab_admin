@@ -35,8 +35,8 @@ class Member extends BaseApi {
    */
   public function listQuery() {
   
-    return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__会员名称)
-  
-  
+    return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
+
+  }
 
 }
