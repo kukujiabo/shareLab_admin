@@ -24,7 +24,7 @@ class RewardDm {
   /**
    * 查询详情
    */
-  public function getDetail() {
+  public function getDetail($data) {
   
     return \App\request('App.Reward.GetDetail', $data);
   
