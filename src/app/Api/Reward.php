@@ -21,7 +21,7 @@ class Reward extends BaseApi {
         'brief' => 'brief|string|true||赠品简介',
         'shop_id' => 'shop_id|int|true||赠品所属门店',
         'status' => 'status|int|false||赠品状态',
-        'imgs' => 'imgs|string|false||赠品轮播图',
+        'carousel' => 'carousel|string|false||赠品轮播图',
         'start_time' => 'start_time|string|false||赠品有效期开始',
         'end_time' => 'end_time|string|false||赠品有效期结束'
       
