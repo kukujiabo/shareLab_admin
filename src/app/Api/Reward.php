@@ -25,6 +25,25 @@ class Reward extends BaseApi {
         'start_time' => 'start_time|string|false||赠品有效期开始',
         'end_time' => 'end_time|string|false||赠品有效期结束'
       
+      ],
+
+      'listQuery' => [
+      
+        'shop_id' => 'shop_id|int|false||门店id',
+        'reward_name' => 'reward_name|string|false||赠品名称',
+        'reward_code' => 'reward_code|string|false||赠品编码',
+        'status' => 'status|int|false||赠品状态',
+        'fields' => 'fields|string|false||查询字段',
+        'order' => 'order|string|false||排序',
+        'page' => 'page|int|false||页码',
+        'page_size' => 'page_size|int|false||每页条数'
+      
+      ],
+
+      'getDetail' => [
+      
+        'id' => 'id|int|true||赠品id'
+      
       ]
     
     ]);
@@ -40,6 +59,30 @@ class Reward extends BaseApi {
   public function create() {
   
     return $this->dm->create($this->retriveRuleParams(__FUNCTION__)); 
+  
+  }
+
+  /**
+   * 查询赠品列表
+   * @desc 查询赠品列表
+   *
+   * @return array list
+   */
+  public function listQuery() {
+  
+    return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
+  
+  }
+
+  /**
+   * 查询赠品详情
+   * @desc 查询赠品详情
+   *
+   * @return array data
+   */
+  public function getDetail() {
+  
+    return $this->dm->getDetail($this->retriveRuleParams(__FUNCTION__));
   
   }
 
