@@ -18,6 +18,7 @@ class Shop extends BaseApi {
         'shop_name' => 'shop_name|string|true||店铺名称',
         'shop_code' => 'shop_code|string|true||店铺编码',
         'thumbnail' => 'thumbnail|string|true||店铺logo',
+        'words' => 'words|string|true||一句话介绍',
         'brief' => 'brief|string|false||店铺简介',
         'image_text' => 'image_text|string|false||店铺照片',
         'carousel' => 'carousel|string|false||店铺轮播图',

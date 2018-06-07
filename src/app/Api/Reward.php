@@ -16,6 +16,7 @@ class Reward extends BaseApi {
       
         'reward_name' => 'reward_name|string|true||赠品名称',
         'reward_code' => 'reward_code|string|true||赠品编码',
+        'check_code' => 'check_code|string|true||核销码',
         'price' => 'price|float|true||赠品价格',
         'thumbnail' => 'thumbnail|string|true||赠品图标',
         'brief' => 'brief|string|true||赠品简介',
