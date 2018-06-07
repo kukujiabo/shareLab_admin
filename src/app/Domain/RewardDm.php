@@ -13,6 +13,15 @@ class RewardDm {
   }
 
   /**
+   * 更新赠品信息
+   */
+  public function edit($data) {
+  
+    return \App\request('App.Reward.Edit', $data);
+  
+  }
+
+  /**
    * 查询列表
    */
   public function listQuery($data) {
