@@ -21,4 +21,10 @@ class MerchantDm {
 
   }
 
+  public function applyList($data) {
+  
+    return \App\request('App.BusinessApply.ListQuery', $data); 
+  
+  }
+
 }
