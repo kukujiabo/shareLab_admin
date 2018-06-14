@@ -18,7 +18,7 @@ class MemberAdvise extends BaseApi {
 
       ]
     
-    ])
+    ]);
   
   }
 
