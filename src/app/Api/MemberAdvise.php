@@ -14,7 +14,12 @@ class MemberAdvise extends BaseApi {
 
       'listQuery' => [
     
-        'member_name' => 'member_name|string|false||会员名称'
+        'member_name' => 'member_name|string|false||会员名称',
+        'sex' => 'sex|int|false||会员性别',
+        'fields' => 'fields|string|false||字段',
+        'order' => 'order|string|false||会员排序',
+        'page' => 'page|int|false||页码',
+        'page_size' => 'page_size|int|false||每页条数'
 
       ]
     
