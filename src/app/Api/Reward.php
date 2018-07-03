@@ -21,6 +21,7 @@ class Reward extends BaseApi {
         'price' => 'price|float|true||赠品价格',
         'thumbnail' => 'thumbnail|string|true||赠品图标',
         'brief' => 'brief|string|true||赠品简介',
+        'image_text' => 'image_text|string|false||活动细则',
         'shop_id' => 'shop_id|int|true||赠品所属门店',
         'status' => 'status|int|false||赠品状态',
         'carousel' => 'carousel|string|false||赠品轮播图',
@@ -41,6 +42,7 @@ class Reward extends BaseApi {
         'brief' => 'brief|string|false||赠品简介',
         'shop_id' => 'shop_id|int|false||赠品所属门店',
         'status' => 'status|int|false||赠品状态',
+        'image_text' => 'image_text|string|false||活动细则',
         'carousel' => 'carousel|string|false||赠品轮播图',
         'start_time' => 'start_time|string|false||赠品有效期开始',
         'end_time' => 'end_time|string|false||赠品有效期结束'
