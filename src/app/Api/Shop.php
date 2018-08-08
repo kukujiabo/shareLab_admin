@@ -14,7 +14,7 @@ class Shop extends BaseApi {
     
       'create' => [
       
-        'mid' => 'mid|int|true||商户id',
+        'mid' => 'mid|int|false||商户id',
         'shop_name' => 'shop_name|string|true||店铺名称',
         'shop_code' => 'shop_code|string|true||店铺编码',
         'phone' => 'phone|string|true||店铺电话',
