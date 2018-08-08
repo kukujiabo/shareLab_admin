@@ -56,6 +56,14 @@ class Merchant extends BaseApi {
         'page' => 'page|int|false|1|页码',
         'page_size' => 'page_size|int|false|20|每页条数'
       
+      ],
+
+      'getAdviseList' => [
+      
+        'shop_name' => 'shop_name|string|false||商铺名称',
+        'page' => 'page|int|false|1|页码',
+        'page_size' => 'page_size|int|false|20|每页条数' 
+      
       ]
     
     ]);
@@ -107,6 +115,18 @@ class Merchant extends BaseApi {
   public function applyList() {
   
     return $this->dm->applyList($this->retriveRuleParams(__FUNCTION__));
+  
+  }
+
+  /**
+   * 查询建议列表
+   * @desc 查询建议列表
+   *
+   * @return array list
+   */
+  public function getAdviseList() {
+  
+    return $this->dm->getAdviseList($this->retriveRuleParams(__FUNCTION__));
   
   }
 

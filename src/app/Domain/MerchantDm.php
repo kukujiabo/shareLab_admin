@@ -27,4 +27,10 @@ class MerchantDm {
   
   }
 
+  public function getAdviseList($data) {
+  
+    return \App\request('App.MerchantAdvise.GetList', $data); 
+  
+  }
+
 }
