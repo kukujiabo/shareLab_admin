@@ -48,4 +48,14 @@ class ShopDm {
   
   }
 
+  /**
+   *
+   *
+   */
+  public function countData($data) {
+  
+    return \App\request('App.Shop.CountData', $data);
+  
+  }
+
 }

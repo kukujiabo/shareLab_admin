@@ -84,6 +84,11 @@ class Shop extends BaseApi {
       
         'id' => 'id|int|true||商品id'
       
+      ],
+
+      'countData' => [
+      
+      
       ]
     
     ]);
@@ -151,6 +156,18 @@ class Shop extends BaseApi {
     $params = $this->retriveRuleParams(__FUNCTION__); 
 
     return $this->dm->getAll($params);
+  
+  }
+
+  /**
+   * 查询门店统计数据
+   * @desc 查询门店统计数据
+   *
+   * @return array data
+   */
+  public function countData() {
+  
+    return $this->dm->countData($this->retriveRuleParams(__FUNCTION__)); 
   
   }
 
