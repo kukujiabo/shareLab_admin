@@ -66,6 +66,12 @@ class Reward extends BaseApi {
       
         'id' => 'id|int|true||赠品id'
       
+      ],
+
+      'removeReward' => [
+      
+        'id' => 'id|int|true||赠品id'
+      
       ]
     
     ]);
@@ -117,6 +123,18 @@ class Reward extends BaseApi {
   public function getDetail() {
   
     return $this->dm->getDetail($this->retriveRuleParams(__FUNCTION__));
+  
+  }
+
+  /**
+   * 删除赠品
+   * @desc 删除赠品
+   *
+   * @return int num
+   */
+  public function removeReward() {
+  
+    return $this->dm->removeReward($this->retriveRuleParams(__FUNCTION__));
   
   }
 

@@ -39,4 +39,10 @@ class RewardDm {
   
   }
 
+  public function removeReward($data) {
+  
+    return \App\request('App.Reward.RemoveReward', $data);
+  
+  }
+
 }
