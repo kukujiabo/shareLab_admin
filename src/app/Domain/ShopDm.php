@@ -58,4 +58,10 @@ class ShopDm {
   
   }
 
+  public function removeShop($data) {
+  
+    return \App\request('App.Shop.RemoveShop', $data);
+  
+  }
+
 }

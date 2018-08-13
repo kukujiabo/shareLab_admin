@@ -82,12 +82,18 @@ class Shop extends BaseApi {
 
       'getDetail' => [
       
-        'id' => 'id|int|true||商品id'
+        'id' => 'id|int|true||店铺id'
       
       ],
 
       'countData' => [
       
+      
+      ],
+
+      'removeShop' => [
+      
+        'id' => 'id|int|true||店铺id'
       
       ]
     
@@ -168,6 +174,18 @@ class Shop extends BaseApi {
   public function countData() {
   
     return $this->dm->countData($this->retriveRuleParams(__FUNCTION__)); 
+  
+  }
+
+  /**
+   * 删除门店
+   * @desc 删除门店
+   *
+   * @return int num
+   */
+  public functoin removeShop() {
+  
+    return $this->dm->removeShop($this->retriveRuleParams(__FUNCTION__));
   
   }
 
