@@ -183,7 +183,7 @@ class Shop extends BaseApi {
    *
    * @return int num
    */
-  public functoin removeShop() {
+  public function removeShop() {
   
     return $this->dm->removeShop($this->retriveRuleParams(__FUNCTION__));
   
