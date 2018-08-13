@@ -9,4 +9,10 @@ class MemberDm {
   
   }
 
+  public function countMemberData($params) {
+  
+    return \App\request('App.Member.CountMemberData', $params);  
+ 
+  }
+
 }

@@ -20,8 +20,12 @@ class Member extends BaseApi {
         'page' => 'page|int|false||页码',
         'page_size' => 'member_name|string|false||每页条数'
       
+      ],
+
+      'countMemberData' => [
+      
+      
       ]
-    
     
     ]);
   
@@ -37,6 +41,18 @@ class Member extends BaseApi {
   
     return $this->dm->listQuery($this->retriveRuleParams(__FUNCTION__));
 
+  }
+
+  /**
+   * 查询会员数据
+   * @desc 查询会员数据
+   *
+   * @return array list
+   */
+  public function countMemberData() {
+  
+    return $this->dm->countMemberData($this->retriveRuleParams(__FUNCTION__)); 
+  
   }
 
 }
