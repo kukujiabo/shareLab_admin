@@ -1,6 +1,5 @@
 <?php
 namespace App\Domain;
-
 class RewardDm {
 
   /**
