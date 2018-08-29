@@ -11,7 +11,7 @@ class Fans extends BaseApi {
   
     return $this->rules([
     
-      'getList' => [
+      'listQuery' => [
       
         'shop_id' => 'shop_id|int|false||店铺id',
 
