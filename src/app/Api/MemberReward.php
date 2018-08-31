@@ -15,6 +15,7 @@ class MemberReward extends BaseApi {
     
       'getList' => [
       
+        'shop_id' => 'shop_id|int|false||店铺id',
         'member_name' => 'member_name|string|false||会员名称',
         'reward_name' => 'reward_name|string|false||赠品名称',
         'checked' => 'checked|int|false||核销状态',
