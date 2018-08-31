@@ -14,6 +14,8 @@ class ShareAction extends BaseApi {
     
       'listQuery' => [
       
+        'shop_id' => 'shop_id|int|false||商铺id',
+        'member_id' => 'member_id|int|false||会员id',
         'member_name' => 'member_name|string|false||会员名称',
         'reward_name' => 'reward_name|string|false||赠品名称',
         'share_code' => 'share_code|string|false||分享码'
