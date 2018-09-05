@@ -125,7 +125,7 @@ class BaseApi extends Api {
 
       // }
       //
-      if (isset($_REQUEST[$paramName]) {
+      if (isset($_REQUEST[$paramName])) {
 
         $params[$paramName] = $this->$paramName;
 
