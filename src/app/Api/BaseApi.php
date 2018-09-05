@@ -113,7 +113,7 @@ class BaseApi extends Api {
 
     foreach($paramNames as $paramName) {
 
-      // if (isset($_REQUEST[$paramName]) && ($this->$paramName != '' || $this->$paramName === 0 || $funcRules[$paramName]['default'] != '')) {
+      //  && ($this->$paramName != '' || $this->$paramName === 0 || $funcRules[$paramName]['default'] != '')) {
       //   
       //   $params[$paramName] = $this->$paramName;
 
@@ -124,8 +124,12 @@ class BaseApi extends Api {
       //   $params[$paramName] = $this->$paramName;
 
       // }
+      //
+      if (isset($_REQUEST[$paramName]) {
 
-      $params[$paramName] = $this->$paramName;
+        $params[$paramName] = $this->$paramName;
+
+      }
     
     }
 
