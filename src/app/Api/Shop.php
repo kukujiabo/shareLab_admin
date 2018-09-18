@@ -28,6 +28,8 @@ class Shop extends BaseApi {
         'carousel' => 'carousel|string|false||店铺轮播图',
         'recommend_code' => 'recommend_code|string|false||推荐码',
         'shop_address' => 'shop_address|string|false||门店地址',
+        'article_link' => 'article_link|string|false||文章链接',
+        'article_image' => 'article_image|string|false||文章图片',
         'latitue' => 'latitude|string|false||纬度',
         'longtitude' => 'longtitude|string|false||经度',
         'status' => 'status|int|false|1|店铺状态：1.有效，2.停用'
@@ -44,6 +46,8 @@ class Shop extends BaseApi {
         'account' => 'account|string|false||店铺账号',
         'password' => 'password|string|false||店铺密码',
         'open_time' => 'open_time|string|false||店铺营业时间 ',
+        'article_link' => 'article_link|string|false||文章链接',
+        'article_image' => 'article_image|string|false||文章图片',
         'words' => 'words|string|false||一句话介绍',
         'thumbnail' => 'thumbnail|string|false||店铺logo',
         'brief' => 'brief|string|false||店铺简介',
